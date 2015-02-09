@@ -15,7 +15,8 @@ var paths = {
   codedst: './public'
 };
 
-gulp.task('default', ['jade', 'less', 'lint', 'jscs', 'copy', 'watch']);
+gulp.task('build', ['jade', 'less', 'lint', 'jscs', 'copy']);
+gulp.task('default', ['build', 'watch']);
 
 gulp.task('jade', function() {
   gulp.src(paths.jadesrc)

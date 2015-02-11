@@ -21,18 +21,14 @@ gulp.task('default', ['build', 'watch']);
 gulp.task('jade', function() {
   gulp.src(paths.jadesrc)
     .pipe(jade({pretty: true, doctype: 'html'}))
-    .on('error', function (err) {
-      console.log(err);
-    })
+    .on('error', console.error.bind(console))
     .pipe(gulp.dest(paths.jadedst));
 });
 
 gulp.task('less', function() {
   gulp.src(paths.lesssrc)
     .pipe(less())
-    .on('error', function (err) {
-      console.log(err);
-    })
+    .on('error', console.error.bind(console))
     .pipe(gulp.dest(paths.lessdst));
 });
 

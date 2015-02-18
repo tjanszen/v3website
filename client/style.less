@@ -1,6 +1,6 @@
 /*****Main Content ****/
 
-#experience, #blog, #books{
+#blog, #books{
   height: 400px;
   border: 1px solid black;
 }
@@ -29,9 +29,30 @@
   text-align:center;
 }
 
-.portfolio-window {
+#portfolio, #experience{
+  border-top:1px solid black;
+  border-bottom:1px solid black;
+}
+
+.portfolio-window, .experience-window {
   height:200px;
   border:1px solid black;
-  margin-top:25px;
-  margin-bottom: 25px;
+  margin-top:50px;
+  margin-bottom: 50px;
+}
+
+.portfolio-window{
+  position:relative:
+  overflow:hidden;
+}
+
+.portfolio-window-back{
+  position:absolute;
+  top:0;
+  left:0;
+  background-color: blue;
+  height: 200px;
+  margin-top:50px;
+  margin-bottom: 50px;
+  visibility: hidden;
 }

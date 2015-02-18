@@ -2,9 +2,91 @@ doctype html
 html(lang='en')
   head
     meta(charset='utf-8')
-    title Prototype
+    title Software Dev - Tommy
+    link(rel='stylesheet', href='/vendor/bootstrap/dist/css/bootstrap.min.css')
+    link(rel='stylesheet', href='/vendor/font-awesome/css/font-awesome.min.css')
     link(rel='stylesheet', href='/style.css')
   body
-    h1 Hello, World
+    .nav.navbar.navbar-default
+      .container-fluid
+        .navbar-header
+          button.navbar-toggle.collapsed(data-toggle="collapse", data-target="#navbar")
+            span.sr-only Toggle navigation
+            span.icon-bar
+            span.icon-bar
+            span.icon-bar
+        #navbar.collapse.navbar-collapse
+          ul.nav.navbar-nav
+            li: a(href='#') About 
+            li: a(href='#') Portfolio
+            li: a(href='#') Blog
+            li: a(href='#') Experience
+    .container-fluid
+      .row#head.text-center
+        .col-xs-12
+          h1 Tommy Janszen
+          h4 Software Developer
+          button.btn.btn-default Contact
+      .row#skills
+        .col-xs-12.col-sm-6
+          .row.skills-row
+            .col-xs-3
+              |jQuery
+            .col-xs-3
+            .col-xs-3
+              |Node.js
+            .col-xs-3
+          .row.skills-row
+            .col-xs-3
+            .col-xs-3
+              |Javascript
+            .col-xs-3
+            .col-xs-3
+              |HTML5
+          .row.skills-row
+            .col-xs-3
+              |Bootstrap
+            .col-xs-3
+            .col-xs-3
+              |CSS
+            .col-xs-3
+        .col-xs-12.col-sm-6
+          .row.skills-row
+            .col-xs-3
+              |Hapi.js
+            .col-xs-3
+            .col-xs-3
+              |Scrum
+            .col-xs-3
+          .row.skills-row
+            .col-xs-3
+            .col-xs-3
+              |Less
+            .col-xs-3
+            .col-xs-3
+              |Jade
+          .row.skills-row
+            .col-xs-3
+              |Angular.js
+            .col-xs-3
+            .col-xs-3
+              |Agile
+            .col-xs-3
+      .row#portfolio
+        .col-xs-12.col-sm-4
+          .row
+            .col-xs-offset-1.col-xs-10.portfolio-window
+        .col-xs-12.col-sm-4
+          .row
+            .col-xs-offset-1.col-xs-10.portfolio-window
+        .col-xs-12.col-sm-4
+          .row
+            .col-xs-offset-1.col-xs-10.portfolio-window
+      .row#experience
+      .row#blog
+      .row#books
+    
+    
     script(src='/vendor/jquery/dist/jquery.js')
     script(src='/main.js')
+    script(src='/vendor/bootstrap/dist/js/bootstrap.min.js')

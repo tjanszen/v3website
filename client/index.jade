@@ -3,7 +3,9 @@ html(lang='en')
   head
     meta(charset='utf-8')
     title Software Dev - Tommy
+    meta(name='viewport', content='width=device-width, initial-scale=1')
     link(rel='stylesheet', href='/vendor/bootstrap/dist/css/bootstrap.min.css')
+    link(href="//maxcdn.bootstrapcdn.com/bootswatch/3.3.2/united/bootstrap.min.css", rel="stylesheet")
     link(rel='stylesheet', href='/vendor/font-awesome/css/font-awesome.min.css')
     link(rel='stylesheet', href='/style.css')
   body
@@ -26,57 +28,80 @@ html(lang='en')
         .col-xs-12
           h1 Tommy Janszen
           h4 Software Developer
-          button.btn.btn-default Contact
+          button.btn.btn-primary(data-toggle='modal' data-target='#contactModal') Contact
+          
+          #contactModal.modal.fade(tabindex='-1' role='dialog' aria-labelledby='contactModalLabel' aria-hidden='true')
+            .modal-dialog
+              .modal-content
+                .modal-header
+                  button.close(type='button' data-dismiss='modal' aria-hidden='true') x
+                  h4#contactModalLabel.modal-title Contact Me
+                .modal-body
+                  .form
+                    .form-group
+                      .input-group
+                        input#uName.form-control(type='text' placeholder='Name')
+                        label.input-group-addon.glyphicon.glyphicon-user(for='uName' )
+                    .form-group
+                      .input-group
+                        input#uSubject.form-control(type='text' placeholder='Subject')
+                        label.input-group-addon.glyphicon.glyphicon-user(for='uSubject')
+                .modal-footer
+                  button.form-control.btn.btn-primary Send
+                  .progress
+                    .progress-bar.progress-bar-primary(role='progressbar' aria-valuenow='1' aria-valuemin='1' aria-valuemax='100' style='width:0%')
+                      span.sr-only progress
+                      
       .row#skills
         .col-xs-12.col-sm-6
           .row.skills-row
-            .col-xs-3
+            .col-xs-3#jquery
               |jQuery
-            .col-xs-3
-            .col-xs-3
+            .col-xs-3.color2
+            .col-xs-3#nodejs
               |Node.js
-            .col-xs-3
+            .col-xs-3.color4
           .row.skills-row
-            .col-xs-3
-            .col-xs-3
+            .col-xs-3.color1
+            .col-xs-3#javascript
               |Javascript
-            .col-xs-3
-            .col-xs-3
+            .col-xs-3.color3
+            .col-xs-3#html
               |HTML5
           .row.skills-row
-            .col-xs-3
+            .col-xs-3#bootstrap
               |Bootstrap
-            .col-xs-3
-            .col-xs-3
+            .col-xs-3.color2
+            .col-xs-3#css
               |CSS
-            .col-xs-3
+            .col-xs-3.color4
         .col-xs-12.col-sm-6
           .row.skills-row
-            .col-xs-3
+            .col-xs-3#hapi
               |Hapi.js
-            .col-xs-3
-            .col-xs-3
+            .col-xs-3.color6
+            .col-xs-3#scrum
               |Scrum
-            .col-xs-3
+            .col-xs-3.color8
           .row.skills-row
-            .col-xs-3
-            .col-xs-3
+            .col-xs-3.color5
+            .col-xs-3#less
               |Less
-            .col-xs-3
-            .col-xs-3
+            .col-xs-3.color7
+            .col-xs-3#jade
               |Jade
           .row.skills-row
-            .col-xs-3
+            .col-xs-3#angular
               |Angular.js
-            .col-xs-3
-            .col-xs-3
+            .col-xs-3.color6
+            .col-xs-3#agile
               |Agile
-            .col-xs-3
+            .col-xs-3.color8
       .row#portfolio
         .col-xs-12.col-sm-4
           .row
             .col-xs-offset-1.col-xs-10.portfolio-window
-            .col-xs-offset-1.col-xs-10.portfolio-window-back
+              .col-xs-offset-1.col-xs-10.portfolio-window-back
         .col-xs-12.col-sm-4
           .row
             .col-xs-offset-1.col-xs-10.portfolio-window

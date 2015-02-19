@@ -1,12 +1,62 @@
+/** style guide
+
+colors:
+#bc271c;
+#aea79f;
+#dd4814;
+#38b44a;
+#772953;
+#efb73e;
+#df382c;
+#3a87ad;
+#468847
+
+**/
+
 /*****Main Content ****/
 
-#blog, #books{
-  height: 400px;
-  border: 1px solid black;
+/** modal popup**/
+.modal-dialog {
+    width: 300px;
+}
+.modal-footer {
+    height: 70px;
+    margin: 0;
+}
+.modal-footer .btn {
+    font-weight: bold;
+}
+.modal-footer .progress {
+    display: none;
+    height: 32px;
+    margin: 0;
+}
+.input-group-addon {
+    color: #fff;
+    background: #3276B1;
+}
+
+/** main **/
+
+/** navbar **/
+
+.navbar-inverse{
+  background-color: #18bc9c;
+}
+
+.navbar-default{
+  border-radius: 0;
 }
 
 .navbar{
   margin-bottom:0;
+}
+
+/** body **/
+
+#blog, #books{
+  height: 400px;
+  border: 1px solid black;
 }
 
 #head .col-xs-12{
@@ -14,22 +64,108 @@
   margin-bottom:100px;
 }
 
+/** skills section **/
 #skills{
 
+}
+.color1{
+  background-color:#38b44a;
+}
+
+.color2{
+  background-color:#efb73e;
+}
+
+.color3{
+  background-color:#df382c;
+}
+
+.color4{
+  background-color: #2c7adf;
+}
+
+.color5{
+  background-color:  #bc271c;
+}
+
+.color6{
+  background-color:#efb73e;
+}
+
+.color7{
+  background-color:#38b44a;
+}
+
+.color8{
+  background-color:#df382c;
+}
+
+#jquery{
+  color: #bc271c;
+  border-top: 1px solid #38b44a;
+}
+
+#nodejs{
+  color:#38b44a;
+  border-top: 1px solid #df382c;
+}
+
+#javascript{
+  color: #772953;
+}
+
+#html{
+  color: #efb73e;
+}
+
+#bootstrap{
+  color:#df382c;
+  border-bottom: 1px solid #38b44a;
+}
+
+#css{
+  color:#3a87ad;
+  border-bottom: 1px solid #df382c;
+}
+
+#hapi{
+  color: #468847;
+  border-top: 1px solid #bc271c;
+}
+
+#less{
+  color:#2c7adf;
+}
+
+#jade{
+  color: #2cdf92;
+}
+
+#angular{
+  color: #bc271c;
+  border-bottom: 1px solid #bc271c;
+}
+
+#agile{
+  color:#772953;
+  border-bottom: 1px solid #38b44a;
+}
+
+#scrum{
+  color: #efb73e;
+  border-top: 1px solid #38b44a;
 }
 
 .skills-row{
   height:25px;
-  border:1px solid black;
 }
 
 .skills-row .col-xs-3{
   height:100%;
-  border: 1px solid black;
   text-align:center;
 }
 
-#portfolio, #experience{
+#experience{
   border-top:1px solid black;
   border-bottom:1px solid black;
 }
@@ -41,18 +177,19 @@
   margin-bottom: 50px;
 }
 
-.portfolio-window{
-  position:relative:
-  overflow:hidden;
+.col-xs-offset-1.col-xs-10.portfolio-window {
+  z-index: 100;
+  overflow: hidden;
 }
 
 .portfolio-window-back{
   position:absolute;
   top:0;
-  left:0;
+  left:320px;
+  margin-left:0;
   background-color: blue;
   height: 200px;
-  margin-top:50px;
-  margin-bottom: 50px;
-  visibility: hidden;
+  width:100%;
+  visibility: visible;
+  z-index:-1;
 }

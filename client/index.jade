@@ -5,7 +5,7 @@ html(lang='en')
     title Software Dev - Tommy
     meta(name='viewport', content='width=device-width, initial-scale=1')
     link(rel='stylesheet', href='/vendor/bootstrap/dist/css/bootstrap.min.css')
-    link(href="//maxcdn.bootstrapcdn.com/bootswatch/3.3.2/united/bootstrap.min.css", rel="stylesheet")
+    //- link(href="//maxcdn.bootstrapcdn.com/bootswatch/3.3.2/united/bootstrap.min.css", rel="stylesheet")
     link(rel='stylesheet', href='/vendor/font-awesome/css/font-awesome.min.css')
     link(rel='stylesheet', href='/style.css')
   body
@@ -19,10 +19,10 @@ html(lang='en')
             span.icon-bar
         #navbar.collapse.navbar-collapse
           ul.nav.navbar-nav
-            li: a(href='#') About 
-            li: a(href='#') Portfolio
-            li: a(href='#') Blog
-            li: a(href='#') Experience
+            li: a(href='#portfolio') Portfolio 
+            li: a(href='#experience') Experience
+            li: a(href='#blog') Blog
+            li: a(href='#about') About
     .container-fluid
       .row#head.text-center
         .col-xs-12
@@ -97,30 +97,103 @@ html(lang='en')
             .col-xs-3#agile
               |Agile
             .col-xs-3.color8
+      //- Portfolio section
       .row#portfolio
+        .col-xs-12.text-center 
+          h3.sub-header  Software Portfolio
         .col-xs-12.col-sm-4
           .row
-            .col-xs-offset-1.col-xs-10.portfolio-window
-              .col-xs-offset-1.col-xs-10.portfolio-window-back
+            .col-xs-offset-1.col-xs-10.portfolio-window#camp
+              .col-xs-offset-1.col-xs-10.float-ups.portfolio-window-back-camp
+                h4 Anamil Adoption Portal
+                ul.list-inline
+                  li Node.js + Hapi
+                  li jQuery + Bootstrap
+                  li CSS + LESS
+                  li HTML5 + Jade
         .col-xs-12.col-sm-4
           .row
-            .col-xs-offset-1.col-xs-10.portfolio-window
+            .col-xs-offset-1.col-xs-10.portfolio-window#weather
+              .col-xs-offset-1.col-xs-10.float-ups.portfolio-window-back-weather
+                h4 Weather App
+                ul.list-inline
+                  li API (Underground Weather)
+                  li jQuery + Bootstrap
+                  li CSS + LESS
+                  li HTML5 + Jade
+              img(src='img/weather.png')
         .col-xs-12.col-sm-4
           .row
-            .col-xs-offset-1.col-xs-10.portfolio-window
+            .col-xs-offset-1.col-xs-10.portfolio-window#apartment
+              .col-xs-offset-1.col-xs-10.float-ups.portfolio-window-back-apartment
+                h4 Weather App
+                ul.list-inline
+                  li API (Underground Weather)
+                  li jQuery + Bootstrap
+                  li CSS + LESS
+        .col-xs-12.col-sm-4
+          .row
+            .col-xs-offset-1.col-xs-10.portfolio-window#countdown
+        .col-xs-12.col-sm-4
+          .row
+            .col-xs-offset-1.col-xs-10.portfolio-window#weather
+              img(src='img/boxes.png')
+        .col-xs-12.col-sm-4
+          .row
+            .col-xs-offset-1.col-xs-10.portfolio-window#memory
+              img(src='img/memory.png')
+      //- Work Experience section
       .row#experience
+        .col-xs-12.text-center
+          h3.sub-header Work Experience
         .col-xs-12.col-sm-4
           .row
-            .col-xs-offset-1.col-xs-10.experience-window
+            .col-xs-offset-1.col-xs-10.experience-window#lisnr
+              img(src='img/logos/lisnr.jpg')
         .col-xs-12.col-sm-4
           .row
-            .col-xs-offset-1.col-xs-10.experience-window
+            .col-xs-offset-1.col-xs-10.experience-window#possible
+              img(src='img/logos/possible.jpg')
         .col-xs-12.col-sm-4
           .row
-            .col-xs-offset-1.col-xs-10.experience-window
+            .col-xs-offset-1.col-xs-10.experience-window#lux
+              img(src='img/logos/lux.png')
       .row#blog
-      .row#books
-    
+        .col-xs-12
+          .row
+            .hidden-xs.col-sm-2.blog.text-center
+              span {
+            .col-xs-12.col-sm-8.blog
+              .row
+                .hidden-xs.col-sm-2
+                  .row.blog-date-number 19
+                  .row.blog-date-month Nov
+                .col-xs-12.col-sm-10
+                  .row.blog-title
+                    h5 Blog Tite One
+                  .row.blog-text
+                    p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis au
+              .row
+                .hidden-xs.col-sm-2
+                  .row.blog-date-number 19
+                  .row.blog-date-month Nov
+                .col-xs-12.col-sm-10
+                  .row.blog-title
+                    h5 Blog Tite One
+                  .row.blog-text
+                    p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis au
+              .row
+                .hidden-xs.col-sm-2
+                  .row.blog-date-number 19
+                  .row.blog-date-month Nov
+                .col-xs-12.col-sm-10
+                  .row.blog-title
+                    h5 Blog Tite One
+                  .row.blog-text
+                    p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis au
+            .hidden-xs.col-sm-2.blog.text-center
+              span }
+      .row#about
     
     script(src='/vendor/jquery/dist/jquery.js')
     script(src='/main.js')

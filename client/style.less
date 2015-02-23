@@ -1,3 +1,4 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,600);
 /** style guide
 
 colors:
@@ -14,6 +15,27 @@ colors:
 **/
 
 /*****Main Content ****/
+
+/* Global */
+
+.sub-header{
+  font-weight: 300;
+  color: #fff;
+}
+
+body{
+  font-family: 'Open Sans';
+  font-size: 12px;
+}
+
+.btn-primary {
+color: #fff;
+background-color: #000000;
+border-color: #FFFFFF;
+font-weight: 300;
+border-radius: 0;
+padding: 7px 20px;
+}
 
 /** modal popup**/
 .modal-dialog {
@@ -40,8 +62,8 @@ colors:
 
 /** navbar **/
 
-.navbar-inverse{
-  background-color: #18bc9c;
+.nav.navbar.navbar-default {
+  background-color: black;
 }
 
 .navbar-default{
@@ -52,16 +74,24 @@ colors:
   margin-bottom:0;
 }
 
+.navbar-default .navbar-nav>li>a {
+color: #FFF;
+}
+
 /** body **/
 
-#blog, #books{
-  height: 400px;
+#about{
+  height: 800px;
   border: 1px solid black;
 }
 
 #head .col-xs-12{
   margin-top:100px;
   margin-bottom:100px;
+}
+
+#head h1{
+  font-weight: 300;
 }
 
 /** skills section **/
@@ -165,14 +195,14 @@ colors:
   text-align:center;
 }
 
-#experience{
-  border-top:1px solid black;
-  border-bottom:1px solid black;
+/* Portfolio style */
+
+div#portfolio {
+  background-color: black;
 }
 
 .portfolio-window, .experience-window {
   height:200px;
-  border:1px solid black;
   margin-top:50px;
   margin-bottom: 50px;
 }
@@ -182,14 +212,73 @@ colors:
   overflow: hidden;
 }
 
-.portfolio-window-back{
+#camp, #apartment, #weather, #lisnr, #possible, #lux{
+  text-align:center;
+}
+
+.portfolio-window img, .experience-window img{
+  height:100%;
+}
+
+.portfolio-window#camp{
+  background: url(img/camp.png);
+  background-size: cover;
+}
+
+.portfolio-window#apartment{
+  background: url(img/apartment.png);
+  background-size: cover;
+}
+
+.portfolio-window#countdown{
+  background: url(img/countdown.png);
+  background-size: cover;
+}
+
+// USE THIS FOR WONDOW-BACK HOVER
+.portfolio-window-back-camp{
   position:absolute;
-  top:0;
-  left:320px;
+  top:250px;
+  left:0;
   margin-left:0;
-  background-color: blue;
   height: 200px;
   width:100%;
   visibility: visible;
   z-index:-1;
+  transition: 1s;
+  background-color: rgba(58, 58, 58, 0.8);
+}
+
+.portfolio-window-back-weather{
+  position:absolute;
+  top:250px;
+  left:0;
+  margin-left:0;
+  height: 200px;
+  width:100%;
+  visibility: visible;
+  z-index:100;
+  transition: 1s;
+  background-color: rgba(58, 58, 58, 0.8);
+}
+.float-ups h4{
+  color: #fff;
+  font-weight:600;
+}
+
+.float-ups ul li{
+  color:#fff;
+  font-weight:400;
+}
+
+/* Blog Section */
+
+#blog .blog{
+  border:1px solid black;
+}
+
+.blog span{
+  font-size: 15em;
+  display:inline-block;
+  vertical-align:middle;
 }

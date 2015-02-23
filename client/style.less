@@ -23,15 +23,23 @@ colors:
   color: #fff;
 }
 
+h3.sub-header-experience,
+h3.sub-header-portfolio,
+h3.sub-header-blog{
+  color: #117EDB;
+  font-weight: 300;
+}
+
+
 body{
   font-family: 'Open Sans';
   font-size: 12px;
 }
 
 .btn-primary {
-color: #fff;
-background-color: #000000;
-border-color: #FFFFFF;
+color:  #3276B1;
+background-color: #fff;
+border-color:  #3276B1;
 font-weight: 300;
 border-radius: 0;
 padding: 7px 20px;
@@ -75,7 +83,24 @@ padding: 7px 20px;
 }
 
 .navbar-default .navbar-nav>li>a {
-color: #FFF;
+  color: #117EDB;
+  font-size:16px;
+
+
+}
+
+/** header**/
+.row#head h1,
+.row#head h4{
+  color: #117EDB;
+}
+
+.row#head h1{
+  padding: 15px 0;
+}
+
+.row#head h4{
+  padding-bottom: 15px;
 }
 
 /** body **/
@@ -86,8 +111,8 @@ color: #FFF;
 }
 
 #head .col-xs-12{
-  margin-top:100px;
-  margin-bottom:100px;
+  margin-top:50px;
+  margin-bottom:50px;
 }
 
 #head h1{
@@ -95,110 +120,131 @@ color: #FFF;
 }
 
 /** skills section **/
-#skills{
 
-}
-.color1{
-  background-color:#38b44a;
+.row#skills{
+  margin-bottom:25px;
 }
 
-.color2{
-  background-color:#efb73e;
-}
-
-.color3{
-  background-color:#df382c;
-}
-
-.color4{
-  background-color: #2c7adf;
-}
-
-.color5{
-  background-color:  #bc271c;
-}
-
-.color6{
-  background-color:#efb73e;
-}
-
-.color7{
-  background-color:#38b44a;
-}
-
-.color8{
-  background-color:#df382c;
-}
-
-#jquery{
-  color: #bc271c;
-  border-top: 1px solid #38b44a;
-}
-
-#nodejs{
-  color:#38b44a;
-  border-top: 1px solid #df382c;
-}
-
-#javascript{
-  color: #772953;
-}
-
-#html{
-  color: #efb73e;
-}
-
-#bootstrap{
-  color:#df382c;
-  border-bottom: 1px solid #38b44a;
-}
-
-#css{
-  color:#3a87ad;
-  border-bottom: 1px solid #df382c;
-}
-
-#hapi{
-  color: #468847;
-  border-top: 1px solid #bc271c;
-}
-
-#less{
-  color:#2c7adf;
-}
-
-#jade{
-  color: #2cdf92;
-}
-
-#angular{
-  color: #bc271c;
-  border-bottom: 1px solid #bc271c;
-}
-
-#agile{
-  color:#772953;
-  border-bottom: 1px solid #38b44a;
-}
-
-#scrum{
-  color: #efb73e;
-  border-top: 1px solid #38b44a;
-}
-
-.skills-row{
-  height:25px;
-}
-
-.skills-row .col-xs-3{
-  height:100%;
+.col-xs-6.col-sm-2.skill-img{
   text-align:center;
 }
+
+.col-xs-6.col-sm-2.skill-img h5{
+  text-transform:uppercase;
+  color: #117EDB;
+}
+.col-xs-6.col-sm-2.skill-img img{
+  height:50px;
+  margin-top: -5px;
+}
+
+
+// #skills{
+//
+// }
+// .color1{
+//   background-color:#38b44a;
+// }
+//
+// .color2{
+//   background-color:#efb73e;
+// }
+//
+// .color3{
+//   background-color:#df382c;
+// }
+//
+// .color4{
+//   background-color: #2c7adf;
+// }
+//
+// .color5{
+//   background-color:  #bc271c;
+// }
+//
+// .color6{
+//   background-color:#efb73e;
+// }
+//
+// .color7{
+//   background-color:#38b44a;
+// }
+//
+// .color8{
+//   background-color:#df382c;
+// }
+//
+// #jquery{
+//   color: #bc271c;
+//   border-top: 1px solid #38b44a;
+// }
+//
+// #nodejs{
+//   color:#38b44a;
+//   border-top: 1px solid #df382c;
+// }
+//
+// #javascript{
+//   color: #772953;
+// }
+//
+// #html{
+//   color: #efb73e;
+// }
+//
+// #bootstrap{
+//   color:#df382c;
+//   border-bottom: 1px solid #38b44a;
+// }
+//
+// #css{
+//   color:#3a87ad;
+//   border-bottom: 1px solid #df382c;
+// }
+//
+// #hapi{
+//   color: #468847;
+//   border-top: 1px solid #bc271c;
+// }
+//
+// #less{
+//   color:#2c7adf;
+// }
+//
+// #jade{
+//   color: #2cdf92;
+// }
+//
+// #angular{
+//   color: #bc271c;
+//   border-bottom: 1px solid #bc271c;
+// }
+//
+// #agile{
+//   color:#772953;
+//   border-bottom: 1px solid #38b44a;
+// }
+//
+// #scrum{
+//   color: #efb73e;
+//   border-top: 1px solid #38b44a;
+// }
+//
+// .skills-row{
+//   height:25px;
+// }
+//
+// .skills-row .col-xs-3{
+//   height:100%;
+//   text-align:center;
+// }
 
 /* Portfolio style */
 
 div#portfolio {
   background-color: black;
+  padding-top:50px;
+  padding-bottom:50px;
 }
 
 .portfolio-window, .experience-window {
@@ -261,9 +307,63 @@ div#portfolio {
   transition: 1s;
   background-color: rgba(58, 58, 58, 0.8);
 }
-.float-ups h4{
+
+.portfolio-window-back-apartment{
+  position:absolute;
+  top:250px;
+  left:0;
+  margin-left:0;
+  height: 200px;
+  width:100%;
+  visibility: visible;
+  z-index:100;
+  transition: 1s;
+  background-color: rgba(58, 58, 58, 0.8);
+}
+
+.portfolio-window-back-countdown{
+  position:absolute;
+  top:250px;
+  left:0;
+  margin-left:0;
+  height: 200px;
+  width:100%;
+  visibility: visible;
+  z-index:100;
+  transition: 1s;
+  background-color: rgba(58, 58, 58, 0.8);
+}
+
+.portfolio-window-back-boxes{
+  position:absolute;
+  top:250px;
+  left:0;
+  margin-left:0;
+  height: 200px;
+  width:100%;
+  visibility: visible;
+  z-index:100;
+  transition: 1s;
+  background-color: rgba(58, 58, 58, 0.8);
+}
+
+.portfolio-window-back-memory{
+  position:absolute;
+  top:250px;
+  left:0;
+  margin-left:0;
+  height: 200px;
+  width:100%;
+  visibility: visible;
+  z-index:100;
+  transition: 1s;
+  background-color: rgba(58, 58, 58, 0.8);
+}
+
+.float-ups-h4{
   color: #fff;
   font-weight:600;
+  text-align:center;
 }
 
 .float-ups ul li{
@@ -271,14 +371,60 @@ div#portfolio {
   font-weight:400;
 }
 
+/* Work Experience Section */
+
+.row#experience{
+  padding-top:50px;
+  padding-bottom:50px;
+}
+
 /* Blog Section */
 
-#blog .blog{
-  border:1px solid black;
+.row#blog{
+  background-color:black;
+  padding-top:50px;
+  padding-bottom:50px;
+}
+
+.row.blog-text p{
+  color: #c8c8c8;
+}
+
+h3.sub-header-blog{
+  text-align:center;
+  color: #117EDB;
+}
+
+.blog-row{
+  margin-top:10px;
+}
+.row.blog-date-number,
+.row.blog-date-month{
+  text-align:center;
+}
+
+.row.blog-date-number{
+  font-size:30px;
+  color: #117EDB;
+}
+
+.row.blog-date-month{
+  font-size: 20px;
+  color: #c8c8c8;
+}
+
+.blog-content{
+  border-left: 1px solid black;
+}
+
+.row.blog-title,
+.row.blog-text{
+  padding-left:15px;
 }
 
 .blog span{
   font-size: 15em;
+  color: #117EDB;
   display:inline-block;
   vertical-align:middle;
 }

@@ -6,7 +6,7 @@ html(lang='en')
     meta(name='viewport', content='width=device-width, initial-scale=1')
     link(rel='stylesheet', href='/vendor/bootstrap/dist/css/bootstrap.min.css')
     //- link(href="//maxcdn.bootstrapcdn.com/bootswatch/3.3.2/united/bootstrap.min.css", rel="stylesheet")
-    link(rel='stylesheet', href='/vendor/font-awesome/css/font-awesome.min.css')
+    link(rel='stylesheet', href='/vendor/components-font-awesome/css/font-awesome.min.css')
     link(rel='stylesheet', href='/style.css')
   body
     .nav.navbar.navbar-default
@@ -19,10 +19,18 @@ html(lang='en')
             span.icon-bar
         #navbar.collapse.navbar-collapse
           ul.nav.navbar-nav
-            li: a(href='#portfolio') Portfolio 
-            li: a(href='#experience') Experience
-            li: a(href='#blog') Blog
-            li: a(href='#about') About
+            li: a(href='#portfolio')
+                  i.fa.fa-laptop
+                  |&nbsp; Portfolio 
+            li: a(href='#experience')
+                  i.fa.fa-briefcase
+                  |&nbsp; Experience
+            li: a(href='#blog')
+                  i.fa.fa-newspaper-o
+                  |&nbsp; Blog
+            li: a(href='#about')
+                  i.fa.fa-male 
+                  |&nbsp; Me
     .container-fluid
       .row#head.text-center
         .col-xs-12
@@ -51,61 +59,81 @@ html(lang='en')
                   .progress
                     .progress-bar.progress-bar-primary(role='progressbar' aria-valuenow='1' aria-valuemin='1' aria-valuemax='100' style='width:0%')
                       span.sr-only progress
-                      
       .row#skills
-        .col-xs-12.col-sm-6
-          .row.skills-row
-            .col-xs-3#jquery
-              |jQuery
-            .col-xs-3.color2
-            .col-xs-3#nodejs
-              |Node.js
-            .col-xs-3.color4
-          .row.skills-row
-            .col-xs-3.color1
-            .col-xs-3#javascript
-              |Javascript
-            .col-xs-3.color3
-            .col-xs-3#html
-              |HTML5
-          .row.skills-row
-            .col-xs-3#bootstrap
-              |Bootstrap
-            .col-xs-3.color2
-            .col-xs-3#css
-              |CSS
-            .col-xs-3.color4
-        .col-xs-12.col-sm-6
-          .row.skills-row
-            .col-xs-3#hapi
-              |Hapi.js
-            .col-xs-3.color6
-            .col-xs-3#scrum
-              |Scrum
-            .col-xs-3.color8
-          .row.skills-row
-            .col-xs-3.color5
-            .col-xs-3#less
-              |Less
-            .col-xs-3.color7
-            .col-xs-3#jade
-              |Jade
-          .row.skills-row
-            .col-xs-3#angular
-              |Angular.js
-            .col-xs-3.color6
-            .col-xs-3#agile
-              |Agile
-            .col-xs-3.color8
+        .col-xs-6.col-sm-2.skill-img
+          h5 html5
+          img#html(src='img/skills/html.svg')
+        .col-xs-6.col-sm-2.skill-img
+          h5 css3
+          img#css(src='img/skills/css3.svg')
+        .col-xs-6.col-sm-2.skill-img
+          h5 Javascript
+          img#js(src='img/skills/js.svg')
+        .col-xs-6.col-sm-2.skill-img
+          h5 jquery
+          img#jq(src='img/skills/jquery.svg')
+        .col-xs-6.col-sm-2.skill-img
+          h5 Node.js
+          img#node(src='img/skills/node.png')
+        .col-xs-6.col-sm-2.skill-img
+          h5 Bootstrap
+          img#boot(src='img/skills/boot.png')
+        
+                      
+      //- .row#skills
+      //-   .col-xs-12.col-sm-6
+      //-     .row.skills-row
+      //-       .col-xs-3#jquery
+      //-         |jQuery
+      //-       .col-xs-3.color2
+      //-       .col-xs-3#nodejs
+      //-         |Node.js
+      //-       .col-xs-3.color4
+      //-     .row.skills-row
+      //-       .col-xs-3.color1
+      //-       .col-xs-3#javascript
+      //-         |Javascript
+      //-       .col-xs-3.color3
+      //-       .col-xs-3#html
+      //-         |HTML5
+      //-     .row.skills-row
+      //-       .col-xs-3#bootstrap
+      //-         |Bootstrap
+      //-       .col-xs-3.color2
+      //-       .col-xs-3#css
+      //-         |CSS
+      //-       .col-xs-3.color4
+      //-   .col-xs-12.col-sm-6
+      //-     .row.skills-row
+      //-       .col-xs-3#hapi
+      //-         |Hapi.js
+      //-       .col-xs-3.color6
+      //-       .col-xs-3#scrum
+      //-         |Scrum
+      //-       .col-xs-3.color8
+      //-     .row.skills-row
+      //-       .col-xs-3.color5
+      //-       .col-xs-3#less
+      //-         |Less
+      //-       .col-xs-3.color7
+      //-       .col-xs-3#jade
+      //-         |Jade
+      //-     .row.skills-row
+      //-       .col-xs-3#angular
+      //-         |Angular.js
+      //-       .col-xs-3.color6
+      //-       .col-xs-3#agile
+      //-         |Agile
+      //-       .col-xs-3.color8
       //- Portfolio section
       .row#portfolio
         .col-xs-12.text-center 
-          h3.sub-header  Software Portfolio
+          h3.sub-header-portfolio Portfolio
         .col-xs-12.col-sm-4
           .row
             .col-xs-offset-1.col-xs-10.portfolio-window#camp
               .col-xs-offset-1.col-xs-10.float-ups.portfolio-window-back-camp
-                h4 Anamil Adoption Portal
+                h4.float-ups-h4 Anamil Adoption Portal
                 ul.list-inline
                   li Node.js + Hapi
                   li jQuery + Bootstrap
@@ -115,7 +143,7 @@ html(lang='en')
           .row
             .col-xs-offset-1.col-xs-10.portfolio-window#weather
               .col-xs-offset-1.col-xs-10.float-ups.portfolio-window-back-weather
-                h4 Weather App
+                h4.float-ups-h4 Weather App
                 ul.list-inline
                   li API (Underground Weather)
                   li jQuery + Bootstrap
@@ -126,26 +154,36 @@ html(lang='en')
           .row
             .col-xs-offset-1.col-xs-10.portfolio-window#apartment
               .col-xs-offset-1.col-xs-10.float-ups.portfolio-window-back-apartment
-                h4 Weather App
+                h4.float-ups-h4 Rent Management App
                 ul.list-inline
-                  li API (Underground Weather)
+                  li AWS s3
                   li jQuery + Bootstrap
-                  li CSS + LESS
+                  li Node.js + Hapi
         .col-xs-12.col-sm-4
           .row
             .col-xs-offset-1.col-xs-10.portfolio-window#countdown
+              .col-xs-offset-1.col-xs-10.float-ups.portfolio-window-back-countdown
+                h4.float-ups-h4 jQuery Countdown Timer
         .col-xs-12.col-sm-4
           .row
-            .col-xs-offset-1.col-xs-10.portfolio-window#weather
+            .col-xs-offset-1.col-xs-10.portfolio-window#boxes
               img(src='img/boxes.png')
+              .col-xs-offset-1.col-xs-10.float-ups.portfolio-window-back-boxes
+                h4.float-ups-h4 Box Generator
+                ul.list-inline
+                  li Generates random boxes with unque ID, colors, sizes, and quantity
         .col-xs-12.col-sm-4
           .row
             .col-xs-offset-1.col-xs-10.portfolio-window#memory
               img(src='img/memory.png')
+              .col-xs-offset-1.col-xs-10.float-ups.portfolio-window-back-memory
+                h4.float-ups-h4 Memory Game
+                ul.list-inline
+                  li See how many matches you can get in 6000 miliseconds!
       //- Work Experience section
       .row#experience
         .col-xs-12.text-center
-          h3.sub-header Work Experience
+          h3.sub-header-experience Work Experience
         .col-xs-12.col-sm-4
           .row
             .col-xs-offset-1.col-xs-10.experience-window#lisnr
@@ -160,37 +198,41 @@ html(lang='en')
               img(src='img/logos/lux.png')
       .row#blog
         .col-xs-12
+          h3.sub-header-blog Blog
           .row
             .hidden-xs.col-sm-2.blog.text-center
               span {
             .col-xs-12.col-sm-8.blog
-              .row
+              .row.blog-row
                 .hidden-xs.col-sm-2
-                  .row.blog-date-number 19
-                  .row.blog-date-month Nov
-                .col-xs-12.col-sm-10
+                  .row.blog-date-number 13
+                  .row.blog-date-month Feb
+                .col-xs-12.col-sm-10.blog-content
                   .row.blog-title
-                    h5 Blog Tite One
+                    a(href='http://tommyjanszen.com/blog/coding/always-pairing/')
+                      h4 Always Pairing
                   .row.blog-text
-                    p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis au
-              .row
+                    p Learning from others in any area of expertise is a huge opportunity to open one’s eyes to different perspectives. We all have two eyes for a reason.
+              .row.blog-row
                 .hidden-xs.col-sm-2
-                  .row.blog-date-number 19
-                  .row.blog-date-month Nov
-                .col-xs-12.col-sm-10
+                  .row.blog-date-number 3
+                  .row.blog-date-month Feb
+                .col-xs-12.col-sm-10.blog-content
                   .row.blog-title
-                    h5 Blog Tite One
+                    a(href='http://tommyjanszen.com/blog/coding/the-new-coding-slogan/')
+                      h4 The New Coding Slogan
                   .row.blog-text
-                    p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis au
-              .row
+                    p I challenge any coding program to take the above slogan instead of the typical “Learn to code in one month!”. First off, no one can become an expert in a one month timeframe.
+              .row.blog-row
                 .hidden-xs.col-sm-2
-                  .row.blog-date-number 19
-                  .row.blog-date-month Nov
-                .col-xs-12.col-sm-10
+                  .row.blog-date-number 29
+                  .row.blog-date-month Jan
+                .col-xs-12.col-sm-10.blog-content
                   .row.blog-title
-                    h5 Blog Tite One
+                    a(href='http://tommyjanszen.com/blog/software-development/what-legos-taught-me/')
+                      h4 What Legos Taught Me
                   .row.blog-text
-                    p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis au
+                    p Little did I know when I was six years old playing with Legos I was preparing myself for a career twenty years later as a software engineer. Legos were my favorite toy as a kid.
             .hidden-xs.col-sm-2.blog.text-center
               span }
       .row#about

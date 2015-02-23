@@ -33,6 +33,18 @@ html(lang='en')
                   |&nbsp; Me
     .container-fluid
       .row#head.text-center
+        .col-xs-12.social-icons.text-right
+          a(href='https://www.linkedin.com/profile/public-profile-settings?trk=prof-edit-edit-public_profile')
+            i.fa.fa-linkedin-square
+          a(href='https://github.com/tjanszen')
+            i.fa.fa-github
+          a(href='https://twitter.com/tommyjanszen')
+            i.fa.fa-twitter
+          a(href='http://codepen.io/tommyjanszen/')
+            i.fa.fa-codepen
+          a(href='https://plus.google.com/u/0/118251629940912334931/about/p/pub')
+            i.fa.fa-google-plus
+              
         .col-xs-12
           h1 Tommy Janszen
           h4 Software Developer
@@ -61,125 +73,78 @@ html(lang='en')
                       span.sr-only progress
       .row#skills
         .col-xs-6.col-sm-2.skill-img
-          h5 html5
           img#html(src='img/skills/html.svg')
         .col-xs-6.col-sm-2.skill-img
-          h5 css3
           img#css(src='img/skills/css3.svg')
         .col-xs-6.col-sm-2.skill-img
-          h5 Javascript
           img#js(src='img/skills/js.svg')
         .col-xs-6.col-sm-2.skill-img
-          h5 jquery
           img#jq(src='img/skills/jquery.svg')
         .col-xs-6.col-sm-2.skill-img
-          h5 Node.js
           img#node(src='img/skills/node.png')
         .col-xs-6.col-sm-2.skill-img
-          h5 Bootstrap
           img#boot(src='img/skills/boot.png')
-        
-                      
-      //- .row#skills
-      //-   .col-xs-12.col-sm-6
-      //-     .row.skills-row
-      //-       .col-xs-3#jquery
-      //-         |jQuery
-      //-       .col-xs-3.color2
-      //-       .col-xs-3#nodejs
-      //-         |Node.js
-      //-       .col-xs-3.color4
-      //-     .row.skills-row
-      //-       .col-xs-3.color1
-      //-       .col-xs-3#javascript
-      //-         |Javascript
-      //-       .col-xs-3.color3
-      //-       .col-xs-3#html
-      //-         |HTML5
-      //-     .row.skills-row
-      //-       .col-xs-3#bootstrap
-      //-         |Bootstrap
-      //-       .col-xs-3.color2
-      //-       .col-xs-3#css
-      //-         |CSS
-      //-       .col-xs-3.color4
-      //-   .col-xs-12.col-sm-6
-      //-     .row.skills-row
-      //-       .col-xs-3#hapi
-      //-         |Hapi.js
-      //-       .col-xs-3.color6
-      //-       .col-xs-3#scrum
-      //-         |Scrum
-      //-       .col-xs-3.color8
-      //-     .row.skills-row
-      //-       .col-xs-3.color5
-      //-       .col-xs-3#less
-      //-         |Less
-      //-       .col-xs-3.color7
-      //-       .col-xs-3#jade
-      //-         |Jade
-      //-     .row.skills-row
-      //-       .col-xs-3#angular
-      //-         |Angular.js
-      //-       .col-xs-3.color6
-      //-       .col-xs-3#agile
-      //-         |Agile
-      //-       .col-xs-3.color8
       //- Portfolio section
       .row#portfolio
         .col-xs-12.text-center 
           h3.sub-header-portfolio Portfolio
         .col-xs-12.col-sm-4
           .row
-            .col-xs-offset-1.col-xs-10.portfolio-window#camp
-              .col-xs-offset-1.col-xs-10.float-ups.portfolio-window-back-camp
-                h4.float-ups-h4 Anamil Adoption Portal
-                ul.list-inline
-                  li Node.js + Hapi
-                  li jQuery + Bootstrap
-                  li CSS + LESS
-                  li HTML5 + Jade
+            a(href='https://boiling-wildwood-9124.herokuapp.com/')
+              .col-xs-offset-1.col-xs-10.portfolio-window#camp
+                .col-xs-offset-1.col-xs-10.float-ups.portfolio-window-back-camp
+                  h4.float-ups-h4 Animal Adoption Portal
+                  ul.list-inline
+                    li Node.js + Hapi
+                    li jQuery + Bootstrap
+                    li CSS + LESS
+                    li HTML5 + Jade
         .col-xs-12.col-sm-4
           .row
-            .col-xs-offset-1.col-xs-10.portfolio-window#weather
-              .col-xs-offset-1.col-xs-10.float-ups.portfolio-window-back-weather
-                h4.float-ups-h4 Weather App
-                ul.list-inline
-                  li API (Underground Weather)
-                  li jQuery + Bootstrap
-                  li CSS + LESS
-                  li HTML5 + Jade
-              img(src='img/weather.png')
+            a(href='http://tjanszen.github.io/Weather-App/')
+              .col-xs-offset-1.col-xs-10.portfolio-window#weather
+                .col-xs-offset-1.col-xs-10.float-ups.portfolio-window-back-weather
+                  h4.float-ups-h4 Weather App
+                  ul.list-inline
+                    li API (Underground Weather)
+                    li jQuery + Bootstrap
+                    li CSS + LESS
+                    li HTML5 + Jade
+                img(src='img/weather.png')
         .col-xs-12.col-sm-4
           .row
-            .col-xs-offset-1.col-xs-10.portfolio-window#apartment
-              .col-xs-offset-1.col-xs-10.float-ups.portfolio-window-back-apartment
-                h4.float-ups-h4 Rent Management App
-                ul.list-inline
-                  li AWS s3
-                  li jQuery + Bootstrap
-                  li Node.js + Hapi
+            a(href='https://still-fjord-9960.herokuapp.com/')
+              .col-xs-offset-1.col-xs-10.portfolio-window#apartment
+                .col-xs-offset-1.col-xs-10.float-ups.portfolio-window-back-apartment
+                  h4.float-ups-h4 Rent Management App
+                  ul.list-inline
+                    li AWS s3
+                    li jQuery + Bootstrap
+                    li Node.js + Hapi
         .col-xs-12.col-sm-4
           .row
-            .col-xs-offset-1.col-xs-10.portfolio-window#countdown
-              .col-xs-offset-1.col-xs-10.float-ups.portfolio-window-back-countdown
-                h4.float-ups-h4 jQuery Countdown Timer
+            a(href='http://tjanszen.github.io/')
+              .col-xs-offset-1.col-xs-10.portfolio-window#countdown
+                .col-xs-offset-1.col-xs-10.float-ups.portfolio-window-back-countdown
+                  h4.float-ups-h4 jQuery Countdown Timer
         .col-xs-12.col-sm-4
           .row
-            .col-xs-offset-1.col-xs-10.portfolio-window#boxes
-              img(src='img/boxes.png')
-              .col-xs-offset-1.col-xs-10.float-ups.portfolio-window-back-boxes
-                h4.float-ups-h4 Box Generator
-                ul.list-inline
-                  li Generates random boxes with unque ID, colors, sizes, and quantity
+            a(href='http://tjanszen.github.io/boxes/')
+              .col-xs-offset-1.col-xs-10.portfolio-window#boxes
+                img(src='img/boxes.png')
+                .col-xs-offset-1.col-xs-10.float-ups.portfolio-window-back-boxes
+                  h4.float-ups-h4 Box Generator
+                  ul.list-inline
+                    li Generates random boxes with unque ID, colors, sizes, and quantity
         .col-xs-12.col-sm-4
           .row
-            .col-xs-offset-1.col-xs-10.portfolio-window#memory
-              img(src='img/memory.png')
-              .col-xs-offset-1.col-xs-10.float-ups.portfolio-window-back-memory
-                h4.float-ups-h4 Memory Game
-                ul.list-inline
-                  li See how many matches you can get in 6000 miliseconds!
+            a(href='http://tjanszen.github.io/memory/')
+              .col-xs-offset-1.col-xs-10.portfolio-window#memory
+                img(src='img/memory.png')
+                .col-xs-offset-1.col-xs-10.float-ups.portfolio-window-back-memory
+                  h4.float-ups-h4 Memory Game
+                  ul.list-inline
+                    li See how many matches you can get in 6000 miliseconds!
       //- Work Experience section
       .row#experience
         .col-xs-12.text-center
@@ -195,7 +160,7 @@ html(lang='en')
         .col-xs-12.col-sm-4
           .row
             .col-xs-offset-1.col-xs-10.experience-window#lux
-              img(src='img/logos/lux.png')
+              img(src='img/logos/cardinal.jpeg')
       .row#blog
         .col-xs-12
           h3.sub-header-blog Blog
@@ -236,7 +201,66 @@ html(lang='en')
             .hidden-xs.col-sm-2.blog.text-center
               span }
       .row#about
-    
+        .col-xs-12.text-center
+          h3.sub-header-about About Myself
+        .col-xs-12.col-sm-6
+          .col-xs-12.text-center
+            h3.sub-header-about Books I've Read
+            p 
+              span My goal is to create usable software that enhances the lives of billions. I started out as a project manager for web and mobile application development in 2011. In 2013 I began teaching myself several programming languages in order to advance my skills (and I loved it). I decided to change career paths in 2014 and fully dedicate my time as a software developer. I was accepted into highly selective coding bootcamp Coding House, the only live-in program in the world where developers spend 80+ hours a week developing software applications. 
+            p 
+              span My background in business combined with the power of software development allow me to see the entire software and business ecosystem. I have worked for digital marketing agencies, a software consulting firm, as well as a tech startup. These different work environments allowed me to develop a diversified portfolio of skills any organization would want on their team.
+            p 
+              span Specialties: JavaScript, jQuery, Bootstrap, HTML5, CSS3, Node.js, Angular.js, UI Development, Usability, Web Development, Agile, Srum Master, Project Management, UAT.
+        .col-xs-12.col-sm-6
+          .col-xs-12.text-center
+            h3.sub-header-about Books I've Read
+          .row
+            .col-xs-2
+            .col-xs-10
+              h5 The Second Machine Age
+              p
+                span by Erik Brynjolfsson and Andrew McAfee
+          .row
+            .col-xs-2
+            .col-xs-10
+              h5 Things A Little Bird Told Me
+              p 
+                span by Biz Stone
+          .row
+            .col-xs-2
+            .col-xs-10
+              h5 How We Got to Now
+              p 
+                span by Steven Johnson
+          .row
+            .col-xs-2
+            .col-xs-10
+              h5 Think Like A Freak
+              p 
+                span by Steven D Levitt
+          .row
+            .col-xs-2
+            .col-xs-10
+              h5 Made To Stick
+              p  
+                span by Chip Heath and Dan Heath
+          .row
+            .col-xs-2
+            .col-xs-10
+              h5 Unlabel: Selling You Without Selling Out
+              p 
+                span by Marc Ecko
+          .row
+            .col-xs-2
+            .col-xs-10
+              h5 The Power of Habit
+              p 
+                span by Charles Duhigg
+              
+              
+              
+
     script(src='/vendor/jquery/dist/jquery.js')
     script(src='/main.js')
     script(src='/vendor/bootstrap/dist/js/bootstrap.min.js')

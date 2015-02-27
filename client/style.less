@@ -167,138 +167,46 @@ padding: 7px 20px;
 
 /* Portfolio style */
 
-div#portfolio {
-  background-color: black;
-  padding-top:50px;
-  padding-bottom:50px;
+
+.row#portfolio-item-right,
+.row#portfolio-item-left{
+padding:20px;
 }
 
-h4.portfolio-titles {
-  color: #848484;
-  margin-left:25px;
-}
-.portfolio-window, .experience-window {
-  height:200px;
-  margin-top:50px;
-  margin-bottom: 50px;
+.col-xs-12.col-sm-8.left-8{
+  border-right:1px solid grey;
 }
 
-.col-xs-offset-1.col-xs-10.portfolio-window {
-  z-index: 100;
-  overflow: hidden;
+.right-section h4{
+  letter-spacing: 5px;
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: uppercase;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
 }
 
-#camp, #apartment, #weather, #lisnr, #possible, #lux{
-  text-align:center;
+.right-section p{
+  letter-spacing: 3px;
+  font-size: 10px;
+  font-weight: 400;
+  text-transform: uppercase;
+  padding-bottom: 0px;
+  margin-bottom: 10px;
+  color: #777;
 }
 
-.portfolio-window img, .experience-window img{
-  height:100%;
+.text-right h5{
+  margin-top: 20px;
+  text-transform: uppercase;
+  font-size: 14px;
+  letter-spacing: 3px;
 }
 
-.portfolio-window#camp{
-  background: url(img/camp.png);
-  background-size: cover;
-}
+/* Weather */
 
-.portfolio-window#apartment{
-  background: url(img/apartment.png);
-  background-size: cover;
-}
-
-.portfolio-window#countdown{
-  background: url(img/countdown.png);
-  background-size: cover;
-}
-
-// USE THIS FOR WONDOW-BACK HOVER
-.portfolio-window-back-camp{
-  position:absolute;
-  top:250px;
-  left:0;
-  margin-left:0;
-  height: 200px;
-  width:100%;
-  visibility: visible;
-  z-index:-1;
-  transition: 1s;
-  background-color: rgba(58, 58, 58, 0.8);
-}
-
-.portfolio-window-back-weather{
-  position:absolute;
-  top:250px;
-  left:0;
-  margin-left:0;
-  height: 200px;
-  width:100%;
-  visibility: visible;
-  z-index:100;
-  transition: 1s;
-  background-color: rgba(58, 58, 58, 0.8);
-}
-
-.portfolio-window-back-apartment{
-  position:absolute;
-  top:250px;
-  left:0;
-  margin-left:0;
-  height: 200px;
-  width:100%;
-  visibility: visible;
-  z-index:100;
-  transition: 1s;
-  background-color: rgba(58, 58, 58, 0.8);
-}
-
-.portfolio-window-back-countdown{
-  position:absolute;
-  top:250px;
-  left:0;
-  margin-left:0;
-  height: 200px;
-  width:100%;
-  visibility: visible;
-  z-index:100;
-  transition: 1s;
-  background-color: rgba(58, 58, 58, 0.8);
-}
-
-.portfolio-window-back-boxes{
-  position:absolute;
-  top:250px;
-  left:0;
-  margin-left:0;
-  height: 200px;
-  width:100%;
-  visibility: visible;
-  z-index:100;
-  transition: 1s;
-  background-color: rgba(58, 58, 58, 0.8);
-}
-
-.portfolio-window-back-memory{
-  position:absolute;
-  top:250px;
-  left:0;
-  margin-left:0;
-  height: 200px;
-  width:100%;
-  visibility: visible;
-  z-index:100;
-  transition: 1s;
-  background-color: rgba(58, 58, 58, 0.8);
-}
-
-.float-ups-h4{
-  color: #fff;
-  font-weight:600;
-  text-align:center;
-}
-
-.float-ups ul li{
-  color:#fff;
-  font-weight:400;
+#weather, #apartment, #countdown, #camp, #memory, #boxes{
+  height:300px;
 }
 
 /* Work Experience Section */

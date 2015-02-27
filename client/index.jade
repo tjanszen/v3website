@@ -71,23 +71,30 @@ html(lang='en')
                   .progress
                     .progress-bar.progress-bar-primary(role='progressbar' aria-valuenow='1' aria-valuemin='1' aria-valuemax='100' style='width:0%')
                       span.sr-only progress
-      .row#skills
-        .col-xs-6.col-sm-2.skill-img
-          img#html(src='img/skills/html.svg')
-        .col-xs-6.col-sm-2.skill-img
-          img#css(src='img/skills/css3.svg')
-        .col-xs-6.col-sm-2.skill-img
-          img#js(src='img/skills/js.svg')
-        .col-xs-6.col-sm-2.skill-img
-          img#jq(src='img/skills/jquery.svg')
-        .col-xs-6.col-sm-2.skill-img
-          img#node(src='img/skills/node.png')
-        .col-xs-6.col-sm-2.skill-img
-          img#boot(src='img/skills/boot.png')
-      //- Portfolio section
-      .row#portfolio
+      //- Skills Section
+      //- .row#skills
+      //-   .col-xs-6.col-sm-2.skill-img
+      //-     img#html(src='img/skills/html.svg')
+      //-   .col-xs-6.col-sm-2.skill-img
+      //-     img#css(src='img/skills/css3.svg')
+      //-   .col-xs-6.col-sm-2.skill-img
+      //-     img#js(src='img/skills/js.svg')
+      //-   .col-xs-6.col-sm-2.skill-img
+      //-     img#jq(src='img/skills/jquery.svg')
+      //-   .col-xs-6.col-sm-2.skill-img
+      //-     img#node(src='img/skills/node.png')
+      //-   .col-xs-6.col-sm-2.skill-img
+      //-     img#boot(src='img/skills/boot.png')
+      //- Portfolio section  
+      .row#title-row
         .col-xs-12.text-center 
           h3.sub-header-portfolio Portfolio
+          span --
+          span 
+            i.fa.fa-laptop
+          span --
+          
+      .row#portfolio
         .col-xs-12.col-sm-4
           .row
             a(href='https://boiling-wildwood-9124.herokuapp.com/')
@@ -146,9 +153,15 @@ html(lang='en')
                   ul.list-inline
                     li See how many matches you can get in 6000 miliseconds!
       //- Work Experience section
+      .row#title-row
+        .col-xs-12.text-center 
+          h3.sub-header-portfolio Work Experience
+          span --
+          span 
+            i.fa.fa-briefcase
+          span --
+          
       .row#experience
-        .col-xs-12.text-center
-          h3.sub-header-experience Work Experience
         .col-xs-12.col-sm-4
           .row
             .col-xs-offset-1.col-xs-10.experience-window#lisnr
@@ -161,48 +174,65 @@ html(lang='en')
           .row
             .col-xs-offset-1.col-xs-10.experience-window#lux
               img(src='img/logos/cardinal.jpeg')
+      //- Blog Section
+      
+      .row#title-row
+        .col-xs-12.text-center 
+          h3.sub-header-portfolio My blog
+          span --
+          span 
+            i.fa.fa-newspaper-o 
+          span --
+          
+      
       .row#blog
-        .col-xs-12
-          h3.sub-header-blog Blog
-          .row
-            .hidden-xs.col-sm-2.blog.text-center
-              span {
-            .col-xs-12.col-sm-8.blog
-              .row.blog-row
-                .hidden-xs.col-sm-2
-                  .row.blog-date-number 13
-                  .row.blog-date-month Feb
-                .col-xs-12.col-sm-10.blog-content
-                  .row.blog-title
-                    a(href='http://tommyjanszen.com/blog/coding/always-pairing/')
-                      h4 Always Pairing
-                  .row.blog-text
-                    p Learning from others in any area of expertise is a huge opportunity to open one’s eyes to different perspectives. We all have two eyes for a reason.
-              .row.blog-row
-                .hidden-xs.col-sm-2
-                  .row.blog-date-number 3
-                  .row.blog-date-month Feb
-                .col-xs-12.col-sm-10.blog-content
-                  .row.blog-title
-                    a(href='http://tommyjanszen.com/blog/coding/the-new-coding-slogan/')
-                      h4 The New Coding Slogan
-                  .row.blog-text
-                    p I challenge any coding program to take the above slogan instead of the typical “Learn to code in one month!”. First off, no one can become an expert in a one month timeframe.
-              .row.blog-row
-                .hidden-xs.col-sm-2
-                  .row.blog-date-number 29
-                  .row.blog-date-month Jan
-                .col-xs-12.col-sm-10.blog-content
-                  .row.blog-title
-                    a(href='http://tommyjanszen.com/blog/software-development/what-legos-taught-me/')
-                      h4 What Legos Taught Me
-                  .row.blog-text
-                    p Little did I know when I was six years old playing with Legos I was preparing myself for a career twenty years later as a software engineer. Legos were my favorite toy as a kid.
-            .hidden-xs.col-sm-2.blog.text-center
-              span }
+        .hidden-xs.col-sm-2.blog.text-center
+          span {
+        .col-xs-12.col-sm-8.blog
+          .row.blog-row
+            .hidden-xs.col-sm-2
+              .row.blog-date-number 13
+              .row.blog-date-month Feb
+            .col-xs-12.col-sm-10.blog-content
+              .row.blog-title
+                a(href='http://tommyjanszen.com/blog/coding/always-pairing/')
+                  h4 Always Pairing
+              .row.blog-text
+                p Learning from others in any area of expertise is a huge opportunity to open one’s eyes to different perspectives. We all have two eyes for a reason.
+          .row.blog-row
+            .hidden-xs.col-sm-2
+              .row.blog-date-number 3
+              .row.blog-date-month Feb
+            .col-xs-12.col-sm-10.blog-content
+              .row.blog-title
+                a(href='http://tommyjanszen.com/blog/coding/the-new-coding-slogan/')
+                  h4 The New Coding Slogan
+              .row.blog-text
+                p I challenge any coding program to take the above slogan instead of the typical “Learn to code in one month!”. First off, no one can become an expert in a one month timeframe.
+          .row.blog-row
+            .hidden-xs.col-sm-2
+              .row.blog-date-number 29
+              .row.blog-date-month Jan
+            .col-xs-12.col-sm-10.blog-content
+              .row.blog-title
+                a(href='http://tommyjanszen.com/blog/software-development/what-legos-taught-me/')
+                  h4 What Legos Taught Me
+              .row.blog-text
+                p Little did I know when I was six years old playing with Legos I was preparing myself for a career twenty years later as a software engineer. Legos were my favorite toy as a kid.
+        .hidden-xs.col-sm-2.blog.text-center
+          span }
+              
+      //- About Section
+      
+      .row#title-row
+        .col-xs-12.text-center 
+          h3.sub-header-portfolio About Myself
+          span --
+          span 
+            i.fa.fa-male 
+          span --
+          
       .row#about
-        .col-xs-12.text-center
-          h3.sub-header-about About Myself
         .col-xs-12.col-sm-6
           .col-xs-12.text-center
             h3.sub-header-about Books I've Read

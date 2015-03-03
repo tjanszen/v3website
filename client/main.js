@@ -2,14 +2,6 @@
 
 $(document).ready(function() {
 
-  $('.portfolio-window').mouseenter(function() {
-    var id = $(this).attr('id');
-    $('.portfolio-window-back-' + id).css("top", "100px")
-  }).mouseleave(function() {
-    var id = $(this).attr('id');
-    $('.portfolio-window-back-' + id).css("top", "300px")
-  });
-
   $('a[href*=#]:not([href=#])').click(function() {
     if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
       var target = $(this.hash);

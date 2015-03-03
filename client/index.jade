@@ -2,7 +2,7 @@ doctype html
 html(lang='en')
   head
     meta(charset='utf-8')
-    title Software Dev - Tommy
+    title Front-End Dev
     meta(name='viewport', content='width=device-width, initial-scale=1')
     link(rel='stylesheet', href='/vendor/bootstrap/dist/css/bootstrap.min.css')
     //- link(href="//maxcdn.bootstrapcdn.com/bootswatch/3.3.2/united/bootstrap.min.css", rel="stylesheet")
@@ -33,22 +33,33 @@ html(lang='en')
                   |&nbsp; Me
     .container-fluid
       .row#head.text-center
-        .col-xs-12.social-icons.text-right
-          a(href='https://www.linkedin.com/profile/public-profile-settings?trk=prof-edit-edit-public_profile')
-            i.fa.fa-linkedin-square
-          a(href='https://github.com/tjanszen')
-            i.fa.fa-github
-          a(href='https://twitter.com/tommyjanszen')
-            i.fa.fa-twitter
-          a(href='http://codepen.io/tommyjanszen/')
-            i.fa.fa-codepen
-          a(href='https://plus.google.com/u/0/118251629940912334931/about/p/pub')
-            i.fa.fa-google-plus
+        //- .col-xs-12.social-icons.text-center
+        //-   a(href='https://www.linkedin.com/profile/public-profile-settings?trk=prof-edit-edit-public_profile')
+        //-     i.fa.fa-linkedin-square
+        //-   a(href='https://github.com/tjanszen')
+        //-     i.fa.fa-github
+        //-   a(href='https://twitter.com/tommyjanszen')
+        //-     i.fa.fa-twitter
+        //-   a(href='http://codepen.io/tommyjanszen/')
+        //-     i.fa.fa-codepen
+        //-   a(href='https://plus.google.com/u/0/118251629940912334931/about/p/pub')
+        //-     i.fa.fa-google-plus
               
-        .col-xs-12
+        .col-xs-12#head-title
           h1 Tommy Janszen
-          h4 Software Developer
-          button.btn.btn-primary(data-toggle='modal' data-target='#contactModal') Contact
+          h4 Front-End Developer
+          .col-xs-12.social-icons.text-center
+            a(href='https://www.linkedin.com/profile/public-profile-settings?trk=prof-edit-edit-public_profile')
+              i.fa.fa-linkedin-square
+            a(href='https://github.com/tjanszen')
+              i.fa.fa-github
+            a(href='https://twitter.com/tommyjanszen')
+              i.fa.fa-twitter
+            a(href='http://codepen.io/tommyjanszen/')
+              i.fa.fa-codepen
+            a(href='https://plus.google.com/u/0/118251629940912334931/about/p/pub')
+              i.fa.fa-google-plus
+          button.btn.btn-primary#contact-me(data-toggle='modal' data-target='#contactModal') Contact
           
           #contactModal.modal.fade(tabindex='-1' role='dialog' aria-labelledby='contactModalLabel' aria-hidden='true')
             .modal-dialog
@@ -71,22 +82,8 @@ html(lang='en')
                   .progress
                     .progress-bar.progress-bar-primary(role='progressbar' aria-valuenow='1' aria-valuemin='1' aria-valuemax='100' style='width:0%')
                       span.sr-only progress
-      //- Skills Section
-      //- .row#skills
-      //-   .col-xs-6.col-sm-2.skill-img
-      //-     img#html(src='img/skills/html.svg')
-      //-   .col-xs-6.col-sm-2.skill-img
-      //-     img#css(src='img/skills/css3.svg')
-      //-   .col-xs-6.col-sm-2.skill-img
-      //-     img#js(src='img/skills/js.svg')
-      //-   .col-xs-6.col-sm-2.skill-img
-      //-     img#jq(src='img/skills/jquery.svg')
-      //-   .col-xs-6.col-sm-2.skill-img
-      //-     img#node(src='img/skills/node.png')
-      //-   .col-xs-6.col-sm-2.skill-img
-      //-     img#boot(src='img/skills/boot.png')
       //- Portfolio section  
-      .row#title-row
+      .row.title-row#portfolio
         .col-xs-12.text-center 
           h3.sub-header-portfolio Portfolio
           span --
@@ -94,9 +91,10 @@ html(lang='en')
             i.fa.fa-laptop
           span --
           
-      .row#portfolio
+      .row
         //- Underground Weather API
-        .row#portfolio-item-right
+        .row.portfolio-item-right
+          .cover-slide
           .col-xs-12.col-sm-6.right-section.text-right
             .row
               .col-xs-12.portfolio-title
@@ -105,17 +103,19 @@ html(lang='en')
               .col-xs-12
                 blockquote.blockquote-reverse
                   span Front-End
-                  p HTML5, jQuery, Javascript, Bootstrap
+                  p HTML5, CSS3, jQuery, Javascript, Bootstra
                 blockquote.blockquote-reverse
-                  span Back-End
-                  p HTML5, jQuery, Javascript, Bootstrap
+                  span API
+                  p Underground Weather 
                 blockquote.blockquote-reverse
                   span Tools
-                  p HTML5, jQuery, Javascript, Bootstrap
-          .col-xs-12.col-sm-6.left-section.text-center
-            img#weather(src='img/weather.png')
+                  p Less, Jade, Gulp.js
+          a(href='http://tjanszen.github.io/Weather-App/')
+            .col-xs-12.col-sm-6.left-section.text-center
+              img#weather(src='img/weather.png')
         //- TOOR
-        .row#portfolio-item-right
+        .row.portfolio-item-right
+          .cover-slide
           .col-xs-12.col-sm-6.right-section.text-right
             .row
               .col-xs-12.portfolio-title
@@ -124,17 +124,23 @@ html(lang='en')
               .col-xs-12
                 blockquote.blockquote-reverse
                   span Front-End
-                  p HTML5, jQuery, Javascript, Bootstrap
+                  p HTML5, CSS3, jQuery, Javascript, Bootstrap
                 blockquote.blockquote-reverse
                   span Back-End
-                  p HTML5, jQuery, Javascript, Bootstrap
+                  p Node.js, MongoDB, Hapi.js, Mongoose
+                blockquote.blockquote-reverse
+                  span API's
+                  p Sabre Corp, Twitter, Mailchimp,
                 blockquote.blockquote-reverse
                   span Tools
-                  p HTML5, jQuery, Javascript, Bootstrap
-          .col-xs-12.col-sm-6.left-section.text-center
-            img#weather(src='img/toor.png')
+                  p Moment.js, Lodash.js, Less, Jade, Gulp.js
+                  
+          a(href='http://toor.club/')
+            .col-xs-12.col-sm-6.left-section.text-center
+              img#weather(src='img/toor.png')
         //- Apartment U
-        .row#portfolio-item-right
+        .row.portfolio-item-right
+          .cover-slide
           .col-xs-12.col-sm-6.right-section.text-right
             .row
               .col-xs-12.portfolio-title
@@ -143,17 +149,19 @@ html(lang='en')
               .col-xs-12
                 blockquote.blockquote-reverse
                   span Front-End
-                  p HTML5, jQuery, Javascript, Bootstrap
+                  p HTML5, CSS3, jQuery, Javascript, Bootstrap
                 blockquote.blockquote-reverse
                   span Back-End
-                  p HTML5, jQuery, Javascript, Bootstrap
+                  p Node.js, MongoDB, Hapi.js, Mongoose
                 blockquote.blockquote-reverse
                   span Tools
-                  p HTML5, jQuery, Javascript, Bootstrap
-          .col-xs-12.col-sm-6.left-section.text-center
-            img#weather(src='img/apartment.png')
+                  p Moment.js, Lodash.js, Less, Jade, Gulp.js
+          a(href='https://still-fjord-9960.herokuapp.com/')
+            .col-xs-12.col-sm-6.left-section.text-center
+              img#weather(src='img/apartment.png')
         //- Animal Adoption
-        .row#portfolio-item-right
+        .row.portfolio-item-right
+          .cover-slide
           .col-xs-12.col-sm-6.right-section.text-right
             .row
               .col-xs-12.portfolio-title
@@ -162,17 +170,19 @@ html(lang='en')
               .col-xs-12
                 blockquote.blockquote-reverse
                   span Front-End
-                  p HTML5, jQuery, Javascript, Bootstrap
+                  p HTML5, CSS3, jQuery, Javascript, Bootstrap
                 blockquote.blockquote-reverse
                   span Back-End
-                  p HTML5, jQuery, Javascript, Bootstrap
+                  p Node.js, MongoDB, Hapi.js, Mongoose
                 blockquote.blockquote-reverse
                   span Tools
-                  p HTML5, jQuery, Javascript, Bootstrap
-          .col-xs-12.col-sm-6.left-section.text-center
-            img#weather(src='img/camp.png')
+                  p Moment.js, Lodash.js, Less, Jade, Gulp.js
+          a(href='https://boiling-wildwood-9124.herokuapp.com/')
+            .col-xs-12.col-sm-6.left-section.text-center
+              img#weather(src='img/camp.png')
         //- Website Template
-        .row#portfolio-item-right
+        .row.portfolio-item-right
+          .cover-slide
           .col-xs-12.col-sm-6.right-section.text-right
             .row
               .col-xs-12.portfolio-title
@@ -181,17 +191,16 @@ html(lang='en')
               .col-xs-12
                 blockquote.blockquote-reverse
                   span Front-End
-                  p HTML5, jQuery, Javascript, Bootstrap
-                blockquote.blockquote-reverse
-                  span Back-End
-                  p HTML5, jQuery, Javascript, Bootstrap
+                  p HTML5, CSS3, jQuery, Javascript
                 blockquote.blockquote-reverse
                   span Tools
-                  p HTML5, jQuery, Javascript, Bootstrap
-          .col-xs-12.col-sm-6.left-section.text-center
-            img#weather(src='img/template.png')
+                  p Less, Jade, Gulp.js
+          a(href='http://tjanszen.github.io/website-template-v1/')
+            .col-xs-12.col-sm-6.left-section.text-center
+              img#weather(src='img/template.png')
         //- Countdown
-        .row#portfolio-item-right
+        .row.portfolio-item-right
+          .cover-slide
           .col-xs-12.col-sm-6.right-section.text-right
             .row
               .col-xs-12.portfolio-title
@@ -201,16 +210,12 @@ html(lang='en')
                 blockquote.blockquote-reverse
                   span Front-End
                   p HTML5, jQuery, Javascript, Bootstrap
-                blockquote.blockquote-reverse
-                  span Back-End
-                  p HTML5, jQuery, Javascript, Bootstrap
-                blockquote.blockquote-reverse
-                  span Tools
-                  p HTML5, jQuery, Javascript, Bootstrap
-          .col-xs-12.col-sm-6.left-section.text-center
-            img#weather(src='img/countdown.png')
+          a(href='http://tjanszen.github.io/')
+            .col-xs-12.col-sm-6.left-section.text-center
+              img#weather(src='img/countdown.png')
         //- Memory Game
-        .row#portfolio-item-right
+        .row.portfolio-item-right
+          .cover-slide
           .col-xs-12.col-sm-6.right-section.text-right
             .row
               .col-xs-12.portfolio-title
@@ -221,15 +226,14 @@ html(lang='en')
                   span Front-End
                   p HTML5, jQuery, Javascript, Bootstrap
                 blockquote.blockquote-reverse
-                  span Back-End
-                  p HTML5, jQuery, Javascript, Bootstrap
-                blockquote.blockquote-reverse
                   span Tools
-                  p HTML5, jQuery, Javascript, Bootstrap
-          .col-xs-12.col-sm-6.left-section.text-center
-            img#weather(src='img/memory.png')
+                  p Less, Jade, Gulp.js
+          a(href='http://tjanszen.github.io/memory/')
+            .col-xs-12.col-sm-6.left-section.text-center
+              img#weather(src='img/memory.png')
         //- Amazing Boxes 
-        .row#portfolio-item-right
+        .row.portfolio-item-right
+          .cover-slide
           .col-xs-12.col-sm-6.right-section.text-right
             .row
               .col-xs-12.portfolio-title
@@ -239,19 +243,11 @@ html(lang='en')
                 blockquote.blockquote-reverse
                   span Front-End
                   p HTML5, jQuery, Javascript, Bootstrap
-                blockquote.blockquote-reverse
-                  span Back-End
-                  p HTML5, jQuery, Javascript, Bootstrap
-                blockquote.blockquote-reverse
-                  span Tools
-                  p HTML5, jQuery, Javascript, Bootstrap
-          .col-xs-12.col-sm-6.left-section.text-center
-            img#weather(src='img/boxes.png')
-              
-          
-      
+          a(href='http://tjanszen.github.io/boxes/')
+            .col-xs-12.col-sm-6.left-section.text-center
+              img#weather(src='img/boxes.png')
       //- Work Experience section
-      .row#title-row
+      .row.title-row#experience
         .col-xs-12.text-center 
           h3.sub-header-portfolio Work Experience
           span --
@@ -259,11 +255,11 @@ html(lang='en')
             i.fa.fa-briefcase
           span --
           
-      .row#experience
+      .row#experince-content
         .col-xs-12.col-sm-4
           .row
             .col-xs-offset-1.col-xs-10.experience-window#lisnr
-              //- img(src='img/logos/lisnr.jpg')
+              img(src='img/logos/lisnr.jpg')
         .col-xs-12.col-sm-4
           .row
             .col-xs-offset-1.col-xs-10.experience-window#possible
@@ -274,7 +270,7 @@ html(lang='en')
               img(src='img/logos/cardinal.jpeg')
       //- Blog Section
       
-      .row#title-row
+      .row.title-row
         .col-xs-12.text-center 
           h3.sub-header-portfolio My blog
           span --
@@ -322,7 +318,7 @@ html(lang='en')
               
       //- About Section
       
-      .row#title-row
+      .row.title-row
         .col-xs-12.text-center 
           h3.sub-header-portfolio About Myself
           span --

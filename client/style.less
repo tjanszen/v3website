@@ -272,12 +272,14 @@ body{
 
 #experince-content img{
   height: 200px;
+  opacity: .8;
+
 }
 
 /* Blog Section */
 
-.row#blog{
-  background-color:black;
+.row#blog-content{
+  background-color:#fff;
   padding-top:50px;
   padding-bottom:50px;
 }
@@ -294,55 +296,92 @@ h3.sub-header-blog{
 .blog-row{
   margin-top:10px;
 }
+
 .row.blog-date-number,
 .row.blog-date-month{
   text-align:center;
 }
 
 .row.blog-date-number{
-  font-size:30px;
-  color: #117EDB;
+  color: rgba(226, 49, 44, 0.7);
+  letter-spacing: 3px;
+  font-size: 30px;
+  font-weight: 400;
+  text-transform: uppercase;
+  padding-bottom: 0px;
+  margin-bottom: 10px;
 }
 
 .row.blog-date-month{
-  font-size: 20px;
   color: #c8c8c8;
+  letter-spacing: 3px;
+  font-size: 20px;
+  font-weight: 400;
+  text-transform: uppercase;
+  padding-bottom: 0px;
+  margin-bottom: 10px;
+  color: #777;
 }
 
 .blog-content{
-  border-left: 1px solid black;
+  border-left: 1px solid rgba(226, 49, 44, 0.7);
 }
 
-.row.blog-title,
-.row.blog-text{
+.row.blog-title h4,
+.row.blog-text p{
   padding-left:15px;
+  letter-spacing: 3px;
+  font-weight: 400;
+  text-transform: uppercase;
+  padding-bottom: 0px;
+  margin-bottom: 10px;
+}
+
+.row.blog-title h4{
+  font-size:20px;
+  color: rgba(226, 49, 44, 0.7);
+}
+
+.row.blog-title a{
+  text-decoration: none;
+}
+
+.row.blog-title a:hover h4{
+  color: rgb(164, 36, 36);
+}
+
+.row.blog-text{
+  font-size: 12px;
+  line-height: 20px;
 }
 
 .blog span{
-  font-size: 15em;
-  color: #117EDB;
+  font-size: 20em;
+  color: rgba(226, 49, 44, 0.7);
   display:inline-block;
   vertical-align:middle;
 }
 
 /* About section */
-#about{
+#about-content{
   margin-top:25px;
   margin-bottom:75px;
 }
 
-#about h4{
+#about-content h4{
   margin-left:20px;
 }
-#about p{
-  font-size: 16px;
-  color: #737373;
+#about-content p{
+  padding-left:15px;
+  letter-spacing: 3px;
   font-weight: 300;
-  line-height: 22px;
-  border-left: 3px solid #117EDB;
+  text-transform: uppercase;
+  padding-bottom: 0px;
+  margin-bottom: 10px;
+  border-left: 3px solid rgba(226, 49, 44, 0.7);
 }
 
-#about p span{
+#about-content p span{
   display: inline-block;
   margin-left: 20px;
   text-align:left;

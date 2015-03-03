@@ -7,6 +7,7 @@ html(lang='en')
     link(rel='stylesheet', href='/vendor/bootstrap/dist/css/bootstrap.min.css')
     //- link(href="//maxcdn.bootstrapcdn.com/bootswatch/3.3.2/united/bootstrap.min.css", rel="stylesheet")
     link(rel='stylesheet', href='/vendor/components-font-awesome/css/font-awesome.min.css')
+    link(rel='stylesheet', href='/animate.css')
     link(rel='stylesheet', href='/style.css')
   body
     .nav.navbar.navbar-default
@@ -45,9 +46,9 @@ html(lang='en')
         //-   a(href='https://plus.google.com/u/0/118251629940912334931/about/p/pub')
         //-     i.fa.fa-google-plus
               
-        .col-xs-12#head-title
-          h1 Tommy Janszen
-          h4 Front-End Developer
+        .col-xs-12#head-title.animated.fadeInUp
+          h1.animated.fadeInRight Tommy Janszen
+          h4.animated.fadeInLeft Front-End Developer
           .col-xs-12.social-icons.text-center
             a(href='https://www.linkedin.com/profile/public-profile-settings?trk=prof-edit-edit-public_profile')
               i.fa.fa-linkedin-square
@@ -59,29 +60,30 @@ html(lang='en')
               i.fa.fa-codepen
             a(href='https://plus.google.com/u/0/118251629940912334931/about/p/pub')
               i.fa.fa-google-plus
-          button.btn.btn-primary#contact-me(data-toggle='modal' data-target='#contactModal') Contact
+          a(href='mailto:tommy.janszen@gmail.com')      
+            button.btn.btn-primary#contact-me Contact
           
-          #contactModal.modal.fade(tabindex='-1' role='dialog' aria-labelledby='contactModalLabel' aria-hidden='true')
-            .modal-dialog
-              .modal-content
-                .modal-header
-                  button.close(type='button' data-dismiss='modal' aria-hidden='true') x
-                  h4#contactModalLabel.modal-title Contact Me
-                .modal-body
-                  .form
-                    .form-group
-                      .input-group
-                        input#uName.form-control(type='text' placeholder='Name')
-                        label.input-group-addon.glyphicon.glyphicon-user(for='uName' )
-                    .form-group
-                      .input-group
-                        input#uSubject.form-control(type='text' placeholder='Subject')
-                        label.input-group-addon.glyphicon.glyphicon-user(for='uSubject')
-                .modal-footer
-                  button.form-control.btn.btn-primary Send
-                  .progress
-                    .progress-bar.progress-bar-primary(role='progressbar' aria-valuenow='1' aria-valuemin='1' aria-valuemax='100' style='width:0%')
-                      span.sr-only progress
+          //- #contactModal.modal.fade(tabindex='-1' role='dialog' aria-labelledby='contactModalLabel' aria-hidden='true')
+          //-   .modal-dialog
+          //-     .modal-content
+          //-       .modal-header
+          //-         button.close(type='button' data-dismiss='modal' aria-hidden='true') x
+          //-         h4#contactModalLabel.modal-title Contact Me
+          //-       .modal-body
+          //-         .form
+          //-           .form-group
+          //-             .input-group
+          //-               input#uName.form-control(type='text' placeholder='Name')
+          //-               label.input-group-addon.glyphicon.glyphicon-user(for='uName' )
+          //-           .form-group
+          //-             .input-group
+          //-               input#uSubject.form-control(type='text' placeholder='Subject')
+          //-               label.input-group-addon.glyphicon.glyphicon-user(for='uSubject')
+          //-       .modal-footer
+          //-         button.form-control.btn.btn-primary Send
+          //-         .progress
+          //-           .progress-bar.progress-bar-primary(role='progressbar' aria-valuenow='1' aria-valuemin='1' aria-valuemax='100' style='width:0%')
+          //-             span.sr-only progress
       //- Portfolio section  
       .row.title-row#portfolio
         .col-xs-12.text-center 
@@ -270,7 +272,7 @@ html(lang='en')
               img(src='img/logos/cardinal.jpeg')
       //- Blog Section
       
-      .row.title-row
+      .row.title-row#blog
         .col-xs-12.text-center 
           h3.sub-header-portfolio My blog
           span --
@@ -279,7 +281,7 @@ html(lang='en')
           span --
           
       
-      .row#blog
+      .row#blog-content
         .hidden-xs.col-sm-2.blog.text-center
           span {
         .col-xs-12.col-sm-8.blog
@@ -318,7 +320,7 @@ html(lang='en')
               
       //- About Section
       
-      .row.title-row
+      .row.title-row#about
         .col-xs-12.text-center 
           h3.sub-header-portfolio About Myself
           span --
@@ -326,10 +328,10 @@ html(lang='en')
             i.fa.fa-male 
           span --
           
-      .row#about
+      .row#about-content
         .col-xs-12.col-sm-6
           .col-xs-12.text-center
-            h3.sub-header-about Books I've Read
+            h3.sub-header-about ME
             p 
               span My goal is to create usable software that enhances the lives of billions. I started out as a project manager for web and mobile application development in 2011. In 2013 I began teaching myself several programming languages in order to advance my skills (and I loved it). I decided to change career paths in 2014 and fully dedicate my time as a software developer. I was accepted into highly selective coding bootcamp Coding House, the only live-in program in the world where developers spend 80+ hours a week developing software applications. 
             p 

@@ -50,15 +50,15 @@ html(lang='en')
           h1.animated.fadeInRight Tommy Janszen
           h4.animated.fadeInLeft Front-End Developer
           .col-xs-12.social-icons.text-center
-            a(href='https://www.linkedin.com/profile/public-profile-settings?trk=prof-edit-edit-public_profile')
+            a(target="_blank" href='https://www.linkedin.com/profile/public-profile-settings?trk=prof-edit-edit-public_profile')
               i.fa.fa-linkedin-square
-            a(href='https://github.com/tjanszen')
+            a(target="_blank" href='https://github.com/tjanszen')
               i.fa.fa-github
-            a(href='https://twitter.com/tommyjanszen')
+            a(target="_blank" href='https://twitter.com/tommyjanszen')
               i.fa.fa-twitter
-            a(href='http://codepen.io/tommyjanszen/')
+            a(target="_blank" href='http://codepen.io/tommyjanszen/')
               i.fa.fa-codepen
-            a(href='https://plus.google.com/u/0/118251629940912334931/about/p/pub')
+            a(target="_blank" href='https://plus.google.com/u/0/118251629940912334931/about/p/pub')
               i.fa.fa-google-plus
           a(href='mailto:tommy.janszen@gmail.com')      
             button.btn.btn-primary#contact-me Contact
@@ -122,6 +122,8 @@ html(lang='en')
             .row
               .col-xs-12.portfolio-title
                 h4 Toor: Crowdsourced Vacations
+                i.fa.fa-trophy.fa-4x 
+                span.first-place 1st Place - Sabre Corp: Launch 2015 
             .row
               .col-xs-12
                 blockquote.blockquote-reverse
@@ -136,8 +138,9 @@ html(lang='en')
                 blockquote.blockquote-reverse
                   span Tools
                   p Moment.js, Lodash.js, Less, Jade, Gulp.js
+                
                   
-          a(href='http://toor.club/')
+          a.toor-details(href='http://toor.club/')
             .col-xs-12.col-sm-6.left-section.text-center
               img#weather(src='img/toor.png')
         //- Apartment U
@@ -260,16 +263,16 @@ html(lang='en')
       .row#experince-content
         .col-xs-12.col-sm-4
           .row
-            .col-xs-offset-1.col-xs-10.experience-window#lisnr
+            .col-xs-offset-1.col-xs-10.experience-window#lisnr.text-center
               img(src='img/logos/lisnr.jpg')
         .col-xs-12.col-sm-4
           .row
-            .col-xs-offset-1.col-xs-10.experience-window#possible
-              img(src='img/logos/possible.jpg')
+            .col-xs-offset-1.col-xs-10.experience-window#lux.text-center
+              img(src='img/logos/cardinal.jpeg')
         .col-xs-12.col-sm-4
           .row
-            .col-xs-offset-1.col-xs-10.experience-window#lux
-              img(src='img/logos/cardinal.jpeg')
+            .col-xs-offset-1.col-xs-10.experience-window#possible.text-center
+              img(src='img/logos/possible.jpg')
       //- Blog Section
       
       .row.title-row#blog
@@ -287,11 +290,21 @@ html(lang='en')
         .col-xs-12.col-sm-8.blog
           .row.blog-row
             .hidden-xs.col-sm-2
+              .row.blog-date-number 25
+              .row.blog-date-month Feb
+            .col-xs-12.col-sm-10.blog-content
+              .row.blog-title
+                a(href='http://blog.tommyjanszen.com/full-circle/')
+                  h4 Full Circle
+              .row.blog-text
+                p Learning from others in any area 
+          .row.blog-row
+            .hidden-xs.col-sm-2
               .row.blog-date-number 13
               .row.blog-date-month Feb
             .col-xs-12.col-sm-10.blog-content
               .row.blog-title
-                a(href='http://tommyjanszen.com/blog/coding/always-pairing/')
+                a(href='http://blog.tommyjanszen.com/always-pairing/')
                   h4 Always Pairing
               .row.blog-text
                 p Learning from others in any area of expertise is a huge opportunity to open one’s eyes to different perspectives. We all have two eyes for a reason.
@@ -301,20 +314,10 @@ html(lang='en')
               .row.blog-date-month Feb
             .col-xs-12.col-sm-10.blog-content
               .row.blog-title
-                a(href='http://tommyjanszen.com/blog/coding/the-new-coding-slogan/')
+                a(href='http://blog.tommyjanszen.com/the-new-coding-slogan/')
                   h4 The New Coding Slogan
               .row.blog-text
                 p I challenge any coding program to take the above slogan instead of the typical “Learn to code in one month!”. First off, no one can become an expert in a one month timeframe.
-          .row.blog-row
-            .hidden-xs.col-sm-2
-              .row.blog-date-number 29
-              .row.blog-date-month Jan
-            .col-xs-12.col-sm-10.blog-content
-              .row.blog-title
-                a(href='http://tommyjanszen.com/blog/software-development/what-legos-taught-me/')
-                  h4 What Legos Taught Me
-              .row.blog-text
-                p Little did I know when I was six years old playing with Legos I was preparing myself for a career twenty years later as a software engineer. Legos were my favorite toy as a kid.
         .hidden-xs.col-sm-2.blog.text-center
           span }
               
